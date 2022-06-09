@@ -16,6 +16,7 @@
 body{
     width: 100%;
     height: 100%;
+    font-family: var(--font-popins);
 }
 
 .container{
@@ -32,8 +33,9 @@ body{
 
 /* Main Card Design */
 .profile-card{
-    width: 340px;
-    height: 200px;
+    width: 320px;
+    /* height: 190px; */
+    height: 450px;
     position: relative;
     background: #fff;
     border-radius: 20px;
@@ -46,4 +48,46 @@ body{
 
 .profile-card .img-box{
     width: 150px;
-}  
+    height: 150px;
+    background: #fff;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+    box-shadow: 0px 20px 35px rgba(0,0,0,0.2);
+    overflow: hidden;
+    transition: all 0.4s ease;
+}
+.profile-card:hover .img-box{
+    width: 250px;
+    height: 250px;
+}
+.profile-card .img-box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: right center;
+}
+
+.profile-card .text-box{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+.profile-card .text-box .details{
+    padding: 40px;
+}
+.profile-card .text-box .details h2{
+    font-size: 1.25rem;
+    line-height: 1.4rem;
+    text-align: center;
+    color: #555;
+    font-weight: 700;
+}
+.profile-card .text-box .details h2 span{
+    font-size: 0.9rem;
+    opacity: 0.6;
+    font-weight: 600;
+}
