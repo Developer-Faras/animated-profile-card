@@ -86,7 +86,6 @@ body{
     width: 100%;
     text-align: center;
     transition: all 0.6s;
-    transform: translateY(160px);
 }
 .profile-card:hover .text-box .details{
     transform: translate(0);
